@@ -110,8 +110,13 @@ const WebCoreApp = ({
   return (
     <Provider store={reduxStore}>
       <Head>
-        <title key="default-title">{'KlaytnSafe{Wallet}'}</title>
+        <title key="default-title">{'KaiaSafe{Wallet}'}</title>
         <MetaTags prefetchUrl={GATEWAY_URL} />
+        <script
+          async
+          data-nf='{"formurl":"https://noteforms.com/forms/kaiasafewallet-feedback-form-vptw2t","emoji":"💬","position":"right","bgcolor":"#12ff80","width":"500"}'
+          src="https://noteforms.com/widgets/embed-min.js"
+        ></script>
       </Head>
 
       <CacheProvider value={emotionCache}>

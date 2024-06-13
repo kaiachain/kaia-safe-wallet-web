@@ -18,7 +18,7 @@ const getIframeContent = (url: string, width: number, height: number, fallback: 
 }
 
 export const _isSafeSrc = (src: string) => {
-  const allowedHosts = ['.safe.global', '.klaytn.foundation']
+  const allowedHosts = ['.safe.global', '.kaia.io']
   const isRelative = src.startsWith('/')
 
   let hostname = ''

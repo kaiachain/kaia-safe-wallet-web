@@ -3,8 +3,8 @@ import { ContentSecurityPolicy, StrictTransportSecurity } from '@/config/securit
 import lightPalette from '@/components/theme/lightPalette'
 import darkPalette from '@/components/theme/darkPalette'
 
-const descriptionText = 'Klaytn Safe is the most trusted platform to manage digital assets on Klaytn blockchain network'
-const titleText = 'KlaytnSafe{Wallet}'
+const descriptionText = 'Kaia Safe is the most trusted platform to manage digital assets on Kaia blockchain network'
+const titleText = 'KaiaSafe{Wallet}'
 
 const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
   <>
@@ -12,14 +12,14 @@ const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
     {!IS_PRODUCTION && <meta name="robots" content="noindex" />}
 
     {/* Social sharing */}
-    <meta name="og:image" content="https://safe.klaytn.foundation/images/social-share.png" />
+    <meta name="og:image" content="https://safe.kaia.io/images/social-share.png" />
     <meta name="og:description" content={descriptionText} />
     <meta name="og:title" content={titleText} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@klaytn_official" />
+    <meta name="twitter:site" content="@kaiachain" />
     <meta name="twitter:title" content={titleText} />
     <meta name="twitter:description" content={descriptionText} />
-    <meta name="twitter:image" content="https://safe.klaytn.foundation/images/social-share.png" />
+    <meta name="twitter:image" content="https://safe.kaia.io/images/social-share.png" />
 
     {/* CSP */}
     <meta httpEquiv="Content-Security-Policy" content={ContentSecurityPolicy} />

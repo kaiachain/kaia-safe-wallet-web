@@ -1,4 +1,4 @@
-name: klaytn-safe-react dev deploy workflow
+name: kaia-safe-react dev deploy workflow
 on:
   push:
     branches:
@@ -30,6 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile && yarn after-install
+          cp ./override/utils.js ./node_modules/@safe-global/safe-gateway-typescript-sdk/dist
 
       - name: Build static files
         env:

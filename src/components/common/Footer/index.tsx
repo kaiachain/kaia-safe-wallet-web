@@ -47,7 +47,7 @@ const Footer = (): ReactElement | null => {
         {IS_OFFICIAL_HOST || IS_DEV ? (
           <>
             <li>
-              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Klaytn Foundation</Typography>
+              <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Kaia DLT Foundation</Typography>
             </li>
             <li>
               <FooterLink href={getHref(AppRoutes.terms)}>Terms & Privacy</FooterLink>
@@ -68,7 +68,7 @@ const Footer = (): ReactElement | null => {
             </li>
           </>
         ) : (
-          <li>{'This is an unofficial distribution of KlaytnSafe{Wallet}'}</li>
+          <li>{'This is an unofficial distribution of KaiaSafe{Wallet}'}</li>
         )}
 
         <li>

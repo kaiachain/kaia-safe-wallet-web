@@ -106,7 +106,7 @@ export const CreateSafeStatus = ({ data, setProgressColor, setStep }: StepRender
           <Box className={layoutCss.row}>
             <Track {...OVERVIEW_EVENTS.OPEN_SAFE} label={OPEN_SAFE_LABELS.after_create}>
               <Button data-testid="start-using-safe-btn" variant="contained" onClick={onFinish}>
-                Start using {'KlaytnSafe{Wallet}'}
+                Start using {'KaiaSafe{Wallet}'}
               </Button>
             </Track>
           </Box>

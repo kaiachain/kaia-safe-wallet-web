@@ -52,7 +52,7 @@ export const ImportFileUpload = ({
 
   return (
     <>
-      <Typography>Import {'KlaytnSafe{Wallet}'} data by uploading a file in the area below.</Typography>
+      <Typography>Import {'KaiaSafe{Wallet}'} data by uploading a file in the area below.</Typography>
 
       <FileUpload
         fileType={FileTypes.JSON}
@@ -74,7 +74,7 @@ export const ImportFileUpload = ({
             mr: 0.5,
           }}
         />
-        Only JSON files exported from the {'KlaytnSafe{Wallet}'} can be imported.
+        Only JSON files exported from the {'KaiaSafe{Wallet}'} can be imported.
       </Typography>
     </>
   )

@@ -18,7 +18,7 @@ const Setup: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Settings – Setup'}</title>
+        <title>{'KaiaSafe{Wallet} – Settings – Setup'}</title>
       </Head>
 
       <SettingsHeader />

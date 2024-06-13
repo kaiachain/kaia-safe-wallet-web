@@ -18,6 +18,8 @@ RUN yarn config set network-timeout 300000 && yarn global add node-gyp
 RUN yarn install --frozen-lockfile
 RUN yarn after-install
 
+COPY ./override/utils.js /app/node_modules/@safe-global/safe-gateway-typescript-sdk/dist
+
 ENV NODE_ENV production
 
 # Next.js collects completely anonymous telemetry data about general usage.

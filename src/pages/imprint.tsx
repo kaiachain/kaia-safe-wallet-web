@@ -59,7 +59,7 @@ const SafeImprint = () => (
     </Typography>
     <Typography>
       This website and their contents are subject to copyright laws.{' '}
-      <Link href="https://github.com/safe-global/safe-wallet-web/blob/dev/LICENSE" passHref legacyBehavior>
+      <Link href="https://github.com/kaiachain/kaia-safe-wallet-web/blob/dev/LICENSE" passHref legacyBehavior>
         <MUILink target="_blank" rel="noreferrer">
           The code is open-source, released under GPL-3.0.
         </MUILink>
@@ -72,7 +72,7 @@ const Imprint: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Imprint'}</title>
+        <title>{'KaiaSafe{Wallet} – Imprint'}</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeImprint />}</main>

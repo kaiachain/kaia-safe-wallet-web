@@ -11,7 +11,7 @@ const Load: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Add Safe Account'}</title>
+        <title>{'KaiaSafe{Wallet} – Add Safe Account'}</title>
       </Head>
 
       {safeAddress ? (

@@ -10,7 +10,7 @@ const Modules: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Settings – Modules'}</title>
+        <title>{'KaiaSafe{Wallet} – Settings – Modules'}</title>
       </Head>
 
       <SettingsHeader />

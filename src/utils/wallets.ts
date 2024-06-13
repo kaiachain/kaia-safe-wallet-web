@@ -47,13 +47,20 @@ export const isSmartContractWallet = memoize(
 /* Check if the wallet is unlocked. */
 export const isWalletUnlocked = async (walletName: string): Promise<boolean | undefined> => {
   const METAMASK = 'MetaMask'
+  const KAIKAS = 'Kaikas'
 
   // Only MetaMask exposes a method to check if the wallet is unlocked
-  // TODO: kaikas
   if (walletName === METAMASK) {
     if (typeof window === 'undefined' || !window.ethereum?._metamask) return false
     try {
       return await window.ethereum?._metamask.isUnlocked()
+    } catch {
+      return false
+    }
+  } else if (walletName === KAIKAS) {
+    if (typeof window === 'undefined' || !window.klaytn?._kaikas) return false
+    try {
+      return await window.klaytn?._kaikas.isUnlocked()
     } catch {
       return false
     }

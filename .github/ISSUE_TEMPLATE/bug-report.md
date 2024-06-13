@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create an issue to fix a bug
-labels: ["bug"]
+labels: ['bug']
 ---
 
 <!--
@@ -11,12 +11,14 @@ BEFORE SUBMITTING: Please search to make sure this issue hasn't been reported al
 ## Bug description
 
 ## Environment
- - Browser: Chrome
- - Wallet: Kaikas
- - Chain: Klaytn mainnet
+
+- Browser: Chrome
+- Wallet: Kaikas
+- Chain: Kaia Mainnet
 
 ## Steps to reproduce
- 1. Go to
+
+1.  Go to
 
 ## Expected result
 

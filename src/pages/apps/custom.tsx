@@ -29,7 +29,7 @@ const CustomSafeApps: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Custom Safe Apps'}</title>
+        <title>{'KaiaSafe{Wallet} – Custom Safe Apps'}</title>
       </Head>
 
       <SafeAppsSDKLink />

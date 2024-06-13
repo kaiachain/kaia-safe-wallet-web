@@ -35,8 +35,8 @@ const canRedeemSep5Airdrop = (allocation?: Vesting[]): boolean => {
 }
 
 const GOVERNANCE_APP_URL = IS_PRODUCTION
-  ? 'https://governance.klaytn.foundation'
-  : 'https://governance.klaytn.foundation'
+  ? 'https://govforum.kaia.io'
+  : 'https://govforum.kaia.io'
 
 const SafeTokenWidget = () => {
   const chainId = useChainId()

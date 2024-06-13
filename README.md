@@ -1,17 +1,9 @@
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+# <img src="/public/images/logo.svg" height="60" valign="middle" alt="KaiaSafe{Wallet}" style="background: #fff; padding: 20px; margin: 0 -20px" />
 
-# NO LONGER MAINTAINED
+[![License](https://img.shields.io/github/license/kaiachain/kaia-safe-wallet-web)](https://github.com/kaiachain/kaia-safe-wallet-web/blob/dev/LICENSE)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/kaiachain/kaia-safe-wallet-web)
 
-Since the launch of Kaia Blockchain this repository has been parked in favour of the new open-source projects in [Kaia's Github](https://github.com/kaiachain). Contributors have now moved there continuing with massive open-source contributions to our blockchain ecosystem. A big thank you to everyone who has contributed to this repository. For more information about Klaytn's chain merge with Finschia blockchain please refer to the launching of Kaia blockchain - [kaia.io](http://kaia.io/).
-
----
-
-# <img src="/public/images/logo.svg" height="60" valign="middle" alt="KlaytnSafe{Wallet}" style="background: #fff; padding: 20px; margin: 0 -20px" />
-
-[![License](https://img.shields.io/github/license/klaytn/klaytn-safe-wallet-web)](https://github.com/klaytn/klaytn-safe-wallet-web/blob/main/LICENSE)
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/klaytn/klaytn-safe-wallet-web)
-
-The default Klaytn Safe web interface.
+The default Kaia Safe web interface.
 
 ## Contributing
 
@@ -30,7 +22,7 @@ Here's the list of all the environment variables:
 | `NEXT_PUBLIC_INFURA_TOKEN`                             | [Infura](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/project-id) RPC API token
 | `NEXT_PUBLIC_SAFE_APPS_INFURA_TOKEN`                   | Infura token for Safe Apps, falls back to `NEXT_PUBLIC_INFURA_TOKEN`
 | `NEXT_PUBLIC_IS_PRODUCTION`                            | Set to `true` to build a minified production app
-| `NEXT_PUBLIC_GATEWAY_URL_PRODUCTION`                   | The base URL for the [Safe Client Gateway](https://github.com/safe-global/safe-client-gateway)
+| `NEXT_PUBLIC_GATEWAY_URL_PRODUCTION`                   | The base URL for the [Safe Client Gateway](https://github.com/kaiachain/kaia-safe-client-gateway)
 | `NEXT_PUBLIC_GATEWAY_URL_STAGING`                      | The base CGW URL on staging
 | `NEXT_PUBLIC_SAFE_VERSION`                             | The latest version of the Safe contract, defaults to 1.3.0
 | `NEXT_PUBLIC_WC_PROJECT_ID`                            | [WalletConnect v2](https://docs.walletconnect.com/2.0/cloud/relay) project ID

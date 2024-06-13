@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Dashboard'}</title>
+        <title>{'KaiaSafe{Wallet} – Dashboard'}</title>
       </Head>
 
       <main>

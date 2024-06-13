@@ -10,37 +10,37 @@ const SafeTerms = () => (
     <Typography variant="h1" mb={2}>
       Terms and Service
     </Typography>
-    <p>Last updated: January 2024.</p>
+    <p>Last updated: June 2024.</p>
     <p>
       These Terms of Service (the &ldquo;Agreement&rdquo;) are a legal agreement between you (&ldquo;you&rdquo;,
-      &ldquo;yours&rdquo; or &ldquo;User&rdquo;) and Klaytn Foundation Limited (&ldquo;Klaytn&rdquo;, &ldquo;we&rdquo;,
+      &ldquo;yours&rdquo; or &ldquo;User&rdquo;) and Kaia DLT Foundation Limited (&ldquo;Kaia&rdquo;, &ldquo;we&rdquo;,
       &ldquo;our&rdquo; or &ldquo;us&rdquo;). We are a company registered in Singapore. You can contact us by writing to
       &nbsp;
-      <Link href="mailto:contact@klaytn.foundation" passHref legacyBehavior>
+      <Link href="mailto:contact@kaia.io" passHref legacyBehavior>
         <MUILink target="_blank" rel="noreferrer">
-          contact@klaytn.foundation
+          contact@kaia.io
         </MUILink>
       </Link>
       .
     </p>
-    <h3>1. What is the Klaytn Safe?</h3>
-    Klaytn Safe is a multi-sig wallet for the Klaytn ecosystem. It is a fork of the well-known multi-sig wallet Safe
-    (prev. Gnosis Safe).
+    <h3>1. What is the Kaia Safe?</h3>
+    Kaia Safe is a multi-sig wallet for the Kaia ecosystem. It is a fork of the well-known multi-sig wallet Safe (prev.
+    Gnosis Safe).
     <br />
-    The following are the benefits of Klaytn Safe.
+    The following are the benefits of Kaia Safe.
     <ol start={1}>
       <li>
-        <b>Store and Transfer KLAY, KCTs (KIP7, KIP13):</b> Users can deposit your virtual assets such as KLAY and
-        Klaytn Compatible Tokens (KCTs, fungible or non-fungible) to a KSafe address and also transfer to a destination
+        <b>Store and Transfer KLAY, KCTs (KIP7, KIP13):</b> Users can deposit your virtual assets such as KLAY and Kaia
+        Compatible Tokens (KCTs, fungible or non-fungible) to a KaiaSafe address and also transfer to a destination
         address.
       </li>
       <li>
-        <b>Security:</b> Assets in your KSafe wallet are highly secured, because the confirmation threshold gives users
-        the liberty to decide which transaction should be executed, so you don&apos;t have to worry about one owner
-        running off with the asset.
+        <b>Security:</b> Assets in your KaiaSafe wallet are highly secured, because the confirmation threshold gives
+        users the liberty to decide which transaction should be executed, so you don&apos;t have to worry about one
+        owner running off with the asset.
       </li>
       <li>
-        <b>Safe Apps:</b> KSafe&apos;s functionality is expanded by the addition of custom apps that enable batch
+        <b>Safe Apps:</b> KaiaSafe&apos;s functionality is expanded by the addition of custom apps that enable batch
         transactions and interaction with other dApps. One example of this safe app is the Transaction Builder. With a
         transaction builder, you don&apos;t have to worry about executing sets of transactions one after another. This
         batch transactions feature allows for transactions to be combined and executed at a click.
@@ -49,70 +49,70 @@ const SafeTerms = () => (
     <h3>2. Terms</h3>
     <ol start={1}>
       <li>
-        &ldquo;KSafe&rdquo; or &ldquo;Services&rdquo; refers to the Klaytn Safe services, the Klay Safe, provided by
-        Klaytn, whether through{' '}
-        <Link href="https://klaytn.foundation/">
+        &ldquo;KaiaSafe&rdquo; or &ldquo;Services&rdquo; refers to the Kaia Safe services, the Kaia Safe, provided by
+        Kaia, whether through{' '}
+        <Link href="https://kaia.io/">
           <MUILink target="_blank" rel="noreferrer">
-            Klaytn Foundation
+            Kaia DLT Foundation
           </MUILink>
         </Link>{' '}
         website any associated website, API, or mobile application related, linked or otherwise connected thereto. You
         may use the Services by accessing the{' '}
-        <Link href="https://safe.klaytn.foundation">
+        <Link href="https://safe.kaia.io">
           <MUILink target="_blank" rel="noreferrer">
-            KSafe
+            KaiaSafe
           </MUILink>
         </Link>{' '}
         website and connecting your blockchain wallet such as Kaikas. For the avoidance of doubts, all content and
-        functionality on the Services is the exclusive property of Klaytn or its licensors and is protected by
-        applicable laws. Klaytn hereby grants you a limited, non-exclusive, non-transferable, revocable license pursuant
-        to Section 8 herein to use the Services solely for your own benefit, provided that you comply with this
-        Agreement. Nothing on this Services should be construed as granting directly or indirectly or by implication any
-        license or right to use any Klaytn intellectual property other than as expressly set forth herein. All rights
-        not expressly granted are reserved.
+        functionality on the Services is the exclusive property of Kaia or its licensors and is protected by applicable
+        laws. Kaia hereby grants you a limited, non-exclusive, non-transferable, revocable license pursuant to Section 8
+        herein to use the Services solely for your own benefit, provided that you comply with this Agreement. Nothing on
+        this Services should be construed as granting directly or indirectly or by implication any license or right to
+        use any Kaia intellectual property other than as expressly set forth herein. All rights not expressly granted
+        are reserved.
       </li>
       <li>
         By using any Services offered by us, you agree that you have read, understood, and accept all of the terms and
         conditions contained in this Agreement, including the &nbsp;
-        <Link href="https://docs.klaytn.foundation/misc/terms-of-use">
+        <Link href="https://docs.kaia.io/misc/terms-of-use">
           <MUILink target="_blank" rel="noreferrer">
             terms of use
           </MUILink>
         </Link>{' '}
-        of Klaytn website and the{' '}
-        <Link href="https://klaytn.foundation/privacy/">
+        of Kaia website and the{' '}
+        <Link href="https://kaia.io/privacy/">
           <MUILink target="_blank" rel="noreferrer">
             privacy policy
           </MUILink>
         </Link>{' '}
-        of Klaytn website incorporated herein by reference, as amended from time to time (Agreement and terms of use and
-        privacy policy of Klaytn website collectively referred to as the &ldquo;Terms of Use&rdquo; ).&nbsp;
+        of Kaia website incorporated herein by reference, as amended from time to time (Agreement and terms of use and
+        privacy policy of Kaia website collectively referred to as the &ldquo;Terms of Use&rdquo; ).&nbsp;
         <b>
-          IF YOU DO NOT AGREE WITH ALL OR PART OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING KSAFE
-          AND MUST STOP OR DISCONTINUE USING THE SERVICES IMMEDIATELY
+          IF YOU DO NOT AGREE WITH ALL OR PART OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING
+          KAIASAFE AND MUST STOP OR DISCONTINUE USING THE SERVICES IMMEDIATELY
         </b>
         .
       </li>
       <li>
-        You may easily find this Agreement on the Services screen. Each time you use KSafe you will be bound by the
+        You may easily find this Agreement on the Services screen. Each time you use KaiaSafe you will be bound by the
         Agreement in force at that time. From time to time, we may change this Agreement. We will publish those changes
         on{' '}
-        <Link href="https://safe.klaytn.foundation">
+        <Link href="https://safe.kaia.io">
           <MUILink target="_blank" rel="noreferrer">
-            KSafe
+            KaiaSafe
           </MUILink>
         </Link>{' '}
         website seven (7) days prior to the enforcement date of the amended terms of the Agreement and you will be bound
-        by the amended Agreement at the time you use KSafe after such enforcement date. For your benefit, if any of the
-        amended terms may materially affect your use of KSafe, we will make notice of such changes thirty (30) days
-        prior to the enforcement date. If you do not agree to those changes, you must not use KSafe. You can always ask
-        us about the Agreement in effect at the time of your access to the KSafe by writing to &nbsp;{' '}
-        <Link href="mailto:partnership@klaytn.foundation">
+        by the amended Agreement at the time you use KaiaSafe after such enforcement date. For your benefit, if any of
+        the amended terms may materially affect your use of KaiaSafe, we will make notice of such changes thirty (30)
+        days prior to the enforcement date. If you do not agree to those changes, you must not use KaiaSafe. You can
+        always ask us about the Agreement in effect at the time of your access to the KaiaSafe by writing to &nbsp;{' '}
+        <Link href="mailto:partnership@kaia.io">
           <MUILink target="_blank" rel="noreferrer">
-            partnership@klaytn.foundation
+            partnership@kaia.io
           </MUILink>
         </Link>
-        . Every time you wish to use KSafe, please check and ensure that you agree with the latest updated version of
+        . Every time you wish to use KaiaSafe, please check and ensure that you agree with the latest updated version of
         the Agreement. Any failure to check the Agreement or object to the Agreement by not using the Services shall be
         your responsibility.
       </li>
@@ -127,14 +127,14 @@ const SafeTerms = () => (
     <h3>3. User Representations</h3>
     <ol start={1}>
       <li>
-        By using the KSafe, you represent and warrant that: (1) you are 19 years of age or older, you have legal
-        capacity, and you agree to comply with these Terms of Use; (2) you will not access the KSafe through automated
-        or non-human means, whether through a bot, script, or otherwise; (3) you will not use KSafe for any illegal or
-        unauthorized purpose; and (4) your use of KSafe will not violate any applicable law or regulation.
+        By using the KaiaSafe, you represent and warrant that: (1) you are 19 years of age or older, you have legal
+        capacity, and you agree to comply with these Terms of Use; (2) you will not access the KaiaSafe through
+        automated or non-human means, whether through a bot, script, or otherwise; (3) you will not use KaiaSafe for any
+        illegal or unauthorized purpose; and (4) your use of KaiaSafe will not violate any applicable law or regulation.
       </li>
       <li>
-        If any of the information you provided is untrue, inaccurate, not current, or incomplete, Klaytn has the right
-        to suspend or terminate your account and refuse any and all current and future use of KSafe.
+        If any of the information you provided is untrue, inaccurate, not current, or incomplete, Kaia has the right to
+        suspend or terminate your account and refuse any and all current and future use of KaiaSafe.
       </li>
       <li>
         The obligation to manage your wallet information shall be borne by you and you shall not allow a third person to
@@ -146,56 +146,56 @@ const SafeTerms = () => (
     <h3>4. What you agree to and warrant ?</h3>
     <ol start={1}>
       <ol>
-        By using KSafe you hereby agree, and warrant that:
+        By using KaiaSafe you hereby agree, and warrant that:
         <ol style={{ listStyleType: 'lower-alpha' }}>
           <li>
             You are of 19-year-old age or older and you agree to provide documentation providing such status if
-            requested or required by Klaytn.
+            requested or required by Kaia.
           </li>
           <li>You have read and understood this Agreement and agree to be bound by the Terms of Use.</li>
           <li>
-            Your usage of KSafe is legal under the laws of your jurisdiction or under the laws or regulation, including,
-            without limitation, any applicable export control laws.
+            Your usage of KaiaSafe is legal under the laws of your jurisdiction or under the laws or regulation,
+            including, without limitation, any applicable export control laws.
           </li>
           <li>
-            You will comply with any applicable tax obligations in your jurisdiction arising from your use of KSafe.
+            You will comply with any applicable tax obligations in your jurisdiction arising from your use of KaiaSafe.
           </li>
           <li>
             You understand the functionality, usage, storage, transmission mechanisms and intricacies associated with
             assets as well as blockchain technology and blockchain-based software systems.
           </li>
           <li>
-            You understand and agree that transactions on Klaytn blockchain are irreversible and may not be erased, that
-            your KSafe address and transactions are displayed permanently and publicly and that you relinquish any right
-            of rectification or erasure of your data.
+            You understand and agree that transactions on Kaia blockchain are irreversible and may not be erased, that
+            your KaiaSafe address and transactions are displayed permanently and publicly and that you relinquish any
+            right of rectification or erasure of your data.
           </li>
           <li>
-            You will not misuse or gain unauthorized access to KSafe by knowingly inserting viruses, cross-site
+            You will not misuse or gain unauthorized access to KaiaSafe by knowingly inserting viruses, cross-site
             scripting, Trojan horses, worms, time-bombs, keystroke loggers, spyware, adware or any other harmful
-            programs or similar computer program designed to negatively affect KSafe and that in the event you do so or
-            otherwise attack KSafe, we reserve the right to report any such activity to the relevant law enforcement
-            authorities and we will take full measures to cooperate with those authorities as required.
+            programs or similar computer program designed to negatively affect KaiaSafe and that in the event you do so
+            or otherwise attack KaiaSafe, we reserve the right to report any such activity to the relevant law
+            enforcement authorities and we will take full measures to cooperate with those authorities as required.
           </li>
           <li>
-            You will not use our KSafe to store, trade or transmit assets that are proceed of criminal or fraudulent
+            You will not use our KaiaSafe to store, trade or transmit assets that are proceed of criminal or fraudulent
             activity.
           </li>
           <li>
-            You will not interfere with the normal provision of the Services by Klaytn by using the Services in ways
-            other than those provided by Klaytn (automatic access program, etc.).
+            You will not interfere with the normal provision of the Services by Kaia by using the Services in ways other
+            than those provided by Kaia (automatic access program, etc.).
           </li>
           <li>
-            You will not use KSafe for activities for unlawful or fraudulent or have such purpose of effect or otherwise
-            support any activities that breach local, national or international regulation or law.
+            You will not use KaiaSafe for activities for unlawful or fraudulent or have such purpose of effect or
+            otherwise support any activities that breach local, national or international regulation or law.
           </li>
           <li>
-            You will not tarnish the reputation or disrupt the business of Klaytn, Services and other third parties.
+            You will not tarnish the reputation or disrupt the business of Kaia, Services and other third parties.
           </li>
           <li>
-            You understand that KSafe is in early development stage, and we accordingly do not guarantee a 100%
+            You understand that KaiaSafe is in early development stage, and we accordingly do not guarantee a 100%
             error-free process and give no price or liquidity guarantee.
           </li>
-          <li>You are using KSafe at your own risk.</li>
+          <li>You are using KaiaSafe at your own risk.</li>
         </ol>
         <li>You will make a joint effort toward smooth Service operation and a sound online community culture.</li>
         <li>
@@ -296,10 +296,10 @@ const SafeTerms = () => (
     <h3>7. What about third-party risk and the terms of third-party platform providers and application stores ?</h3>
     <ol start={1}>
       <li>
-        KSafe relies in part on third party and open-source software, including the Klaytn blockchain, and the continued
-        development and support by third parties. There is no assurance or guarantee that those third parties will
-        maintain their support of their own software or that open-source software will continue to be maintained. This
-        may have a material adverse effect on KSafe.
+        KaiaSafe relies in part on third party and open-source software, including the Kaia blockchain, and the
+        continued development and support by third parties. There is no assurance or guarantee that those third parties
+        will maintain their support of their own software or that open-source software will continue to be maintained.
+        This may have a material adverse effect on KaiaSafe.
       </li>
       <li>
         WE DO NOT WARRANT THAT THE DATA, SOFTWARE, FUNCTIONS, OR ANY OTHER INFORMATION OFFERED ON OR THROUGH OUR
@@ -315,10 +315,10 @@ const SafeTerms = () => (
         RESULTS FROM THE DOWNLOAD OR USE OF SUCH MATERIAL OR DATA.
       </li>
       <li>
-        KSAFE MAY INCLUDE CONTENT, MATERIAL, LINKS OR SERVICES INCLUDING WITHOUT LIMITATION THIRD PARTY WEBSITES, APPS
-        OR DAPPS FROM THE THIRD-PARTY (COLLECTIVELY, &ldquo;THIRD PARTY SERVICES&rdquo;). SUCH THIRD PARTY SERVICES ARE
-        PROVIDED FOR USER&apos;S CONVENIENCE AND WE SHALL NOT GUARANTEE THE SAFETY, LEGALITY OR SUSTAINABILITY OF SUCH
-        THIRD PARTY SERVICES. WE ARE NOT RESPONSIBLE FOR THE MAINTENANCE AND MANAGEMENT OF THIRD PARTY SERVICES OR
+        KAIASAFE MAY INCLUDE CONTENT, MATERIAL, LINKS OR SERVICES INCLUDING WITHOUT LIMITATION THIRD PARTY WEBSITES,
+        APPS OR DAPPS FROM THE THIRD-PARTY (COLLECTIVELY, &ldquo;THIRD PARTY SERVICES&rdquo;). SUCH THIRD PARTY SERVICES
+        ARE PROVIDED FOR USER&apos;S CONVENIENCE AND WE SHALL NOT GUARANTEE THE SAFETY, LEGALITY OR SUSTAINABILITY OF
+        SUCH THIRD PARTY SERVICES. WE ARE NOT RESPONSIBLE FOR THE MAINTENANCE AND MANAGEMENT OF THIRD PARTY SERVICES OR
         MATERIALS REFERENCED FROM THIRD PARTY SERVICES, AND PROVIDE NO GUARANTEE OF ANY KIND REGARDING THIRD PARTY
         SERVICES.
       </li>
@@ -355,14 +355,14 @@ const SafeTerms = () => (
         We shall not be held liable for any damages incurred by you when it is unable to provide the Services for any
         one of the following reasons: <br />
         <ol style={{ listStyleType: 'lower-alpha' }}>
-          <li>A force majeure event or a state equivalent thereto beyond the control of the Klaytn.</li>
+          <li>A force majeure event or a state equivalent thereto beyond the control of the Kaia.</li>
           <li>Damages caused by false or inaccurate information provided by you.</li>
           <li>Disruption to Service use or damages incurred due to causes attributable to you or users.</li>
           <li>
             Damages incurred by an infringement of a third party&apos;s intellectual property rights caused by your
             actions.
           </li>
-          <li>Other reasons where there is no willful misconduct or gross negligence on the part of the Klaytn.</li>
+          <li>Other reasons where there is no willful misconduct or gross negligence on the part of the Kaia.</li>
         </ol>
       </li>
       <li>
@@ -374,40 +374,41 @@ const SafeTerms = () => (
     <h3>9. Privacy Policy</h3>
     <ol start={1}>
       <li>
-        We do not collect or use your personal information in the course of providing the Services and KSafe does not
+        We do not collect or use your personal information in the course of providing the Services and KaiaSafe does not
         require your personal information for your access to the Services. You will only need to connect your blockchain
         wallet without providing any personal information.
       </li>
       <li>
-        Notwithstanding the foregoing, we care about data privacy and security. Please review Klaytn&apos;s privacy
-        policy on{' '}
-        <Link href="https://klaytn.foundation/privacy/">
+        Notwithstanding the foregoing, we care about data privacy and security. Please review Kaia&apos;s privacy policy
+        on{' '}
+        <Link href="https://kaia.io/privacy/">
           <MUILink target="_blank" rel="noreferrer">
-            https://klaytn.foundation/privacy/
+            https://kaia.io/privacy/
           </MUILink>
         </Link>
-        . By using KSafe, you are agreeing to be bound by Klaytn privacy policy, which is incorporated into the Terms of
-        Use.
+        . By using KaiaSafe, you are agreeing to be bound by Kaia privacy policy, which is incorporated into the Terms
+        of Use.
       </li>
     </ol>
     <h3>10. Term and Termination</h3>
     <ol start={1}>
       <li>
-        The Terms of Use Shall remain in full force and effect while you are using the KSafe. Without limiting any other
-        provision of the Terms of Use, we reserve the right to, in our sole discretion and without notice or liability,
-        deny access to and use of the KSafe, to any person for any reason or for no reason, including without limitation
-        for breach of any representation, warranty contained in this Agreement or any terms in the Terms of Use of any
-        applicable law or regulation.
+        The Terms of Use Shall remain in full force and effect while you are using the KaiaSafe. Without limiting any
+        other provision of the Terms of Use, we reserve the right to, in our sole discretion and without notice or
+        liability, deny access to and use of the KaiaSafe, to any person for any reason or for no reason, including
+        without limitation for breach of any representation, warranty contained in this Agreement or any terms in the
+        Terms of Use of any applicable law or regulation.
       </li>
       <li>
         You may terminate this Agreement at any given time by not using this Services or by requesting termination to
         the contact information provided herein. All benefits acquired through the use of the Services shall expire upon
         termination of this Agreement. You shall be solely responsible for moving or securing any assets within your
-        KSafe before your termination and we shall neither be held liable for or obligated to compensate for such loss.
+        KaiaSafe before your termination and we shall neither be held liable for or obligated to compensate for such
+        loss.
       </li>
       <li>
-        We may terminate your use or participation of KSafe or delete any content or information that you posted at any
-        time, in our sole discretion, for any of the following reasons:
+        We may terminate your use or participation of KaiaSafe or delete any content or information that you posted at
+        any time, in our sole discretion, for any of the following reasons:
         <ol style={{ listStyleType: 'lower-alpha' }}>
           <li>
             When you cause interruption upon the operation of the Services by your willful misconduct or negligence.
@@ -435,15 +436,15 @@ const SafeTerms = () => (
     <p>
       This Agreement shall be prescribed and implemented in accordance with the laws of the Republic of Singapore
       excluding any principles of conflict of lawsand courts of Singapore shall have exclusive jurisdiction over any
-      disputes between you and Klaytn with regard to the use of the Services. If there is any conflict between Klaytn
+      disputes between you and Kaia with regard to the use of the Services. If there is any conflict between Kaia
       website terms of use and this Agreement, this Agreement shall prevail.
     </p>
     <h3>12. Contact Us</h3>
     <p>
-      Klaytn Foundation Limited. <br />
-      <Link href="mailto:contact@klaytn.foundation">
+      Kaia DLT Foundation. <br />
+      <Link href="mailto:contact@kaia.io">
         <MUILink target="_blank" rel="noreferrer">
-          contact@klaytn.foundation
+          contact@kaia.io
         </MUILink>
       </Link>
     </p>
@@ -454,7 +455,7 @@ const Terms: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Terms'}</title>
+        <title>{'KaiaSafe{Wallet} – Terms'}</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeTerms />}</main>

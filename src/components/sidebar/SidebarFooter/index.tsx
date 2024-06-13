@@ -31,7 +31,7 @@ const SidebarFooter = (): ReactElement => {
 
       <Track {...OVERVIEW_EVENTS.HELP_CENTER}>
         <ListItem disablePadding>
-          <a target="_blank" rel="noopener noreferrer" href={HELP_CENTER_URL} style={{ width: '100%' }}>
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/kaiachain" style={{ width: '100%' }}>
             <SidebarListItemButton>
               <SidebarListItemIcon color="primary">
                 <HelpCenterIcon />
