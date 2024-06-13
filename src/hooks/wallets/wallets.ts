@@ -48,13 +48,13 @@ for (let _walletName in ProviderLabel) {
 walletFilter['MetaMask'] = true
 
 const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit } = {
+  [WALLET_KEYS.KAIKAS]: () => kaikasModule() as WalletInit,
   [WALLET_KEYS.INJECTED]: () =>
     injectedWalletModule({
       /* @ts-ignore */
       filter: walletFilter,
       displayUnavailable: [ProviderLabel.MetaMask],
     }) as WalletInit,
-  [WALLET_KEYS.KAIKAS]: () => kaikasModule() as WalletInit,
   [WALLET_KEYS.WALLETCONNECT_V2]: (chain) => walletConnectV2(chain) as WalletInit,
   [WALLET_KEYS.DCENT]: () => dcentModule() as WalletInit,
   [WALLET_KEYS.COINBASE]: () => coinbaseModule({ darkMode: prefersDarkMode() }) as WalletInit,
