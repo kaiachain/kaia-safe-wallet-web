@@ -50,6 +50,9 @@ const Footer = (): ReactElement | null => {
               <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Kaia DLT Foundation</Typography>
             </li>
             <li>
+              <FooterLink href={getHref(AppRoutes.apiReference)}>API reference</FooterLink>
+            </li>
+            <li>
               <FooterLink href={getHref(AppRoutes.terms)}>Terms & Privacy</FooterLink>
             </li>
             <li>
