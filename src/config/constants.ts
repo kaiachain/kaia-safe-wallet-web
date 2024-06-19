@@ -2,9 +2,9 @@ export const IS_PRODUCTION = process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true'
 export const IS_DEV = process.env.NODE_ENV === 'development'
 
 export const GATEWAY_URL_PRODUCTION =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-gateway.klaytn.foundation/cgw'
+  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-gateway.kaia.io/cgw'
 export const GATEWAY_URL_STAGING =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-gateway.klaytn.foundation/cgw'
+  process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-gateway.kaia.io/cgw'
 
 // Magic numbers
 export const POLLING_INTERVAL = 15_000
@@ -19,8 +19,8 @@ export const BEAMER_ID = process.env.NEXT_PUBLIC_BEAMER_ID || ''
 
 // Wallets
 export const WC_PROJECT_ID = process.env.NEXT_PUBLIC_WC_PROJECT_ID || ''
-export const TREZOR_APP_URL = 'safe.klaytn.foundation'
-export const TREZOR_EMAIL = 'support@klaytn.foundation'
+export const TREZOR_APP_URL = 'safe.kaia.io'
+export const TREZOR_EMAIL = 'support@kaia.io'
 
 // Cypress
 export const CYPRESS_MNEMONIC = process.env.NEXT_PUBLIC_CYPRESS_MNEMONIC || ''
@@ -32,7 +32,7 @@ export const SAFE_TOKEN_ADDRESSES: { [chainId: string]: string } = {}
 export const SAFE_APPS_INFURA_TOKEN = process.env.NEXT_PUBLIC_SAFE_APPS_INFURA_TOKEN || INFURA_TOKEN
 export const SAFE_APPS_THIRD_PARTY_COOKIES_CHECK_URL = ''
 export const SAFE_APPS_DEMO_SAFE_MAINNET = ''
-export const SAFE_APPS_SDK_DOCS_URL = 'https://docs.klaytn.foundation/apps-sdk-overview'
+export const SAFE_APPS_SDK_DOCS_URL = 'https://docs.kaia.io/apps-sdk-overview'
 
 // Google Tag Manager
 export const GOOGLE_TAG_MANAGER_ID = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID || ''
@@ -57,18 +57,18 @@ export enum SafeAppsTag {
 
 export const WC_APP_PROD = {
   id: 111,
-  url: 'https://apps-portal.klaytn.foundation/wallet-connect',
+  url: 'https://apps-portal.kaia.io/wallet-connect',
 }
 export const WC_APP_DEV = {
   id: 25,
-  url: 'https://safe-apps.klaytn.foundation/wallet-connect',
+  url: 'https://safe-apps.kaia.io/wallet-connect',
 }
 
 // Safe Gelato relay service
 export const SAFE_RELAY_SERVICE_URL_PRODUCTION =
-  process.env.NEXT_PUBLIC_SAFE_RELAY_SERVICE_URL_PRODUCTION || 'https://safe-client.klaytn.foundation/v1/relay'
+  process.env.NEXT_PUBLIC_SAFE_RELAY_SERVICE_URL_PRODUCTION || 'https://safe-client.kaia.io/v1/relay'
 export const SAFE_RELAY_SERVICE_URL_STAGING =
-  process.env.NEXT_PUBLIC_SAFE_RELAY_SERVICE_URL_STAGING || 'https://safe-client.klaytn.foundation/v1/relay'
+  process.env.NEXT_PUBLIC_SAFE_RELAY_SERVICE_URL_STAGING || 'https://safe-client.kaia.io/v1/relay'
 
 // Help Center
 export const HELP_CENTER_URL = 'https://help.safe.glob'
@@ -96,11 +96,11 @@ export const HelperCenterArticleTitles = {
 }
 
 export const RECOVERY_FEEDBACK_FORM =
-  'https://noteforms.com/forms/safe-feedback-form-hk16ds?notionforms=1&utm_source=notionforms'
+  'https://noteforms.com/forms/kaiasafewallet-feedback-form-vptw2t'
 
 // Social
-export const DISCORD_URL = 'https://discord.com/invite/klaytnofficial'
-export const TWITTER_URL = 'https://twitter.com/safe'
+export const DISCORD_URL = 'https://discord.com/invite/kaiachain'
+export const TWITTER_URL = 'https://twitter.com/kaiachain'
 
 // Legal
 export const IS_OFFICIAL_HOST = process.env.NEXT_PUBLIC_IS_OFFICIAL_HOST === 'true'

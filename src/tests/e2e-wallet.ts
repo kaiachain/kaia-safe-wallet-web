@@ -23,7 +23,7 @@ const e2eWalletModule = (rpcUri: ChainInfo['rpcUri']): WalletInit => {
 
         return {
           provider: createEIP1193Provider(provider.engine, {
-            eth_requestAccounts: async () => provider.getAddresses(),
+            // eth_requestAccounts: async () => provider.getAddresses(),
           }),
         }
       },

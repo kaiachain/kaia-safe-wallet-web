@@ -8,7 +8,7 @@ const Cookies: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Settings – Cookies'}</title>
+        <title>{'KaiaSafe{Wallet} – Settings – Cookies'}</title>
       </Head>
 
       <SettingsHeader />

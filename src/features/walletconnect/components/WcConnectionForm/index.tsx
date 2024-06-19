@@ -50,8 +50,8 @@ export const WcConnectionForm = ({ sessions, uri }: { sessions: SessionTypes.Str
 
         <Typography variant="body2" color="text.secondary">
           {safeLoaded
-            ? `Paste the pairing code below to connect to your KlaytnSafe{Wallet} via WalletConnect`
-            : `Please open one of your KlaytnSafe Accounts to connect to via WalletConnect`}
+            ? `Paste the pairing code below to connect to your KaiaSafe{Wallet} via WalletConnect`
+            : `Please open one of your KaiaSafe Accounts to connect to via WalletConnect`}
         </Typography>
 
         {safeLoaded ? (

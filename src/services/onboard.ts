@@ -42,9 +42,9 @@ export const createOnboard = (
     },
 
     appMetadata: {
-      name: 'KlaytnSafe{Wallet}',
+      name: 'KaiaSafe{Wallet}',
       icon: location.origin + '/images/logo-round.svg',
-      description: 'KlaytnSafe{Wallet} – smart contract wallet for Klaytn',
+      description: 'KaiaSafe{Wallet} – smart contract wallet for Kaia',
     },
 
     connect: {

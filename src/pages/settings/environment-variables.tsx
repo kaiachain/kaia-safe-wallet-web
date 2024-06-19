@@ -7,7 +7,7 @@ const EnvironmentVariablesPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'KlaytnSafe{Wallet} – Settings – Environment variables'}</title>
+        <title>{'KaiaSafe{Wallet} – Settings – Environment variables'}</title>
       </Head>
 
       <SettingsHeader />

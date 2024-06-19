@@ -1,45 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 227.2 227.1" style="enable-background:new 0 0 227.2 227.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_2_);}
-	.st2{fill:url(#SVGID_3_);}
-	.st3{fill:url(#SVGID_4_);}
-</style>
-<g id="Layer_2">
-	<g id="레이어_1_1_">
-		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="70.6493" y1="135.4907" x2="197.3743" y2="262.2057" gradientTransform="matrix(1 0 0 -1 0 230)">
-			<stop  offset="0" style="stop-color:#FF2F00"/>
-			<stop  offset="0.13" style="stop-color:#FF3F00"/>
-			<stop  offset="0.38" style="stop-color:#FF6700"/>
-			<stop  offset="0.59" style="stop-color:#FF8C00"/>
-		</linearGradient>
-		<path class="st0" d="M186.4,26.3C167.1,10.1,142.8,0.8,117.6,0L59.7,153L186.4,26.3z"/>
-		
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="177.6504" y1="52.03" x2="177.6504" y2="197.58" gradientTransform="matrix(1 0 0 -1 0 230)">
-			<stop  offset="0.2" style="stop-color:#F00048"/>
-			<stop  offset="0.79" style="stop-color:#FF8C00"/>
-		</linearGradient>
-		<path class="st1" d="M200.9,40.8l-72.8,72.8l72.8,72.8C236,144.2,236,82.9,200.9,40.8z"/>
-		
-			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-0.5245" y1="70.6967" x2="115.2333" y2="186.4445" gradientTransform="matrix(1 0 0 -1 0 230)">
-			<stop  offset="9.000000e-02" style="stop-color:#850000"/>
-			<stop  offset="0.25" style="stop-color:#A90E00"/>
-			<stop  offset="0.45" style="stop-color:#CE1C00"/>
-			<stop  offset="0.64" style="stop-color:#E92700"/>
-			<stop  offset="0.8" style="stop-color:#F92D00"/>
-			<stop  offset="0.93" style="stop-color:#FF2F00"/>
-		</linearGradient>
-		<path class="st2" d="M89.2,17.5L0.2,106.4c-1.8,28.6,7.2,56.8,25.3,79L89.2,17.5z"/>
-		
-			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="52.7911" y1="8.5104" x2="161.953" y2="71.5357" gradientTransform="matrix(1 0 0 -1 0 230)">
-			<stop  offset="7.000000e-02" style="stop-color:#850000"/>
-			<stop  offset="0.88" style="stop-color:#D30168"/>
-		</linearGradient>
-		<path class="st3" d="M113.6,128l-72.8,72.8c42.2,35.1,103.4,35.1,145.6,0L113.6,128z"/>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 228" width="228" height="228">
+	<title>logo-no-text-svg</title>
+	<defs>
+		<image width="228" height="228" id="logonotextimg" href="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDIyOCAyMjgiIHdpZHRoPSIyMjgiIGhlaWdodD0iMjI4Ij4KCTx0aXRsZT5sb2dvLXJvdW5kLXN2ZzwvdGl0bGU+Cgk8ZGVmcz4KCQk8aW1hZ2UgIHdpZHRoPSIyMjgiIGhlaWdodD0iMjI4IiBpZD0iaW1nMSIgaHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFPUUFBQURrQVFNQUFBQ3ltUnJPQUFBQUFYTlNSMElCMmNrc2Z3QUFBQVpRVEZSRkFBQUF6UE02eEUrOUp3QUFBQUowVWs1VEFQOWJrU0sxQUFBQ3BFbEVRVlI0bk8zWTNXcFRRUkFBNEZSVDZvWFFncmNGMC9jUTlNRUVXK3FEdGVDREdQQUJHdWlGUXVxeHlmenMvT2ZzT1ZHOGFDOUs0MGM0TzdPN00zTThXYWlmazkrNzMvZWY2S1BXczUrVmZya3VGTDZhNmZsRHBSL3ZLaDBXaGI3ZVZvcVBUZlQ5OTBvaDJreHhVYkZDa2pPbEpjZUtlVXlVQW9xVkFvb1ZzNXdvaFJzcmhSc3FoenRCT2R3Snlza0lsWk14UVRsVm9YS3FqcTZjNW41dGFlNVhQcEZIMTdhQi9kcTJ0MUIxS2EzK2VsUHBlbFVwUHpMVW0rdFk0VmpwK21WMGVGWHAwM0s2Nm5EN2RIUHhvazNuWkhMT0R0Wm5vejVYNlprY2M1N1hxMHAxc3F6cVJZZjNseUc4KzkwcWFzNlJWZFRKN3UvVzhiYVdFbWxyQzRHYXh4bzFqelhhK2x5a1psRkdoMFdoSmxORzdaSzFtdDAxYXBmY295YVBSbTFBSGVyQ1ZlckNWV3AzcUVkZHVFcnQvbWwxeWVoUWx3eXBQaG5qMWFkS3Fqc1pIZW9UT1Y1OW1zY3JiY0srd2tMd1hxRklaZ29GMWlsdUVaUnVwNE5ZU2FiWWJoTEZ1cDRvZGd5cnVMMko0dlppTDBwVTNTbXIxRTVpcGQ3YnAzQndxSTFOVVdxZlU1UWFzMVU0a3JxZ0hrZjFNQkVxRHlML1dIbDQrcStVSjV3WFBhZ2o4d3czOG04bzNLb3U1VE01UjhXZEc2SDd6M3dIeFFBZjNOOHBTbFVGbWtSV2MyS2xlbFVydElHa1RtSWJTRlFXZWwrZkU4VlV5amQ3M3hjU3hXUmhQM1hkQ3RLQi9UVHBaVTVsbDZTaEpsWWFhcHp1RjAyamgxRHhMQm91dk82V1JYT1lVSXp4T1ZzOEQzbDkvc1JUaTFENnQrR0tNRkx4TTFycitXck9YRmRQakhObTBYcktQYUQxL0Z4UDVyWE9lVi93cVpSYXY2ZlU3emdIM3A3cU55OFhzTkw2bmM0RnJMUitseFFCYjVkT1JVaVBieXY5Y2VtMWhmVHRnOWUyNksrZnZmS2loOU90Vjk2SHA3TkFPZE9iZDVGU0xtOXVJK1ZTWkRzc0xnY2V1NHdWSHJ5NWlGWDBUZzVFL0wxTDEzcVY2ZTdMK3Yrdi9nRFRuc24wMVpwYlNRQUFBQUJKUlU1RXJrSmdnZz09Ii8+Cgk8L2RlZnM+Cgk8c3R5bGU+Cgk8L3N0eWxlPgoJPGcgaWQ9IkxheWVyXzIiPgoJCTx1c2UgaWQ9IktBSUEgQlJBTkRNQVJLX0JMQUNLIiBocmVmPSIjaW1nMSIgeD0iMCIgeT0iMCIvPgoJPC9nPgo8L3N2Zz4="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Layer_2">
+		<use id="logo-no-text" href="#logonotextimg" transform="matrix(1,0,0,1,0,0)"/>
 	</g>
-</g>
 </svg>

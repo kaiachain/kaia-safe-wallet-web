@@ -6,6 +6,7 @@ export const enum WALLET_KEYS {
   COINBASE = 'COINBASE',
   LEDGER = 'LEDGER',
   TREZOR = 'TREZOR',
+  KAIKAS = 'KAIKAS',
 }
 
 // TODO: Check if undefined is needed as a return type, possibly couple this with WALLET_MODULES
@@ -17,6 +18,7 @@ export const CGW_NAMES: { [key in WALLET_KEYS]: string | undefined } = {
   [WALLET_KEYS.SOCIAL]: 'socialSigner',
   [WALLET_KEYS.LEDGER]: 'ledger',
   [WALLET_KEYS.TREZOR]: 'trezor',
+  [WALLET_KEYS.KAIKAS]: 'kaikas',
 }
 
 export const KAIKAS_SVG = `<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 66" width="72" height="66">

@@ -40,13 +40,13 @@ const SafeCookiePolicy = () => (
     </p>
     <p>
       This Cookie Policy applies to our website at{' '}
-      <Link href="https://safe.klaytn.foundation" passHref legacyBehavior>
-        <MUILink>https://safe.klaytn.foundation</MUILink>
+      <Link href="https://safe.kaia.io" passHref legacyBehavior>
+        <MUILink>https://safe.kaia.io</MUILink>
       </Link>
       &nbsp;and sets out some further detail on how and why we use these technologies on our website.{' '}
     </p>
     <p>
-      In this policy, &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refers to Klaytn Foundation Limited a company
+      In this policy, &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refers to Kaia DLT Foundation Limited a company
       incorporated in Singapore. The terms &ldquo;you&rdquo; and &ldquo;your&rdquo; includes our clients, business
       partners and users of this website.{' '}
     </p>
@@ -347,7 +347,7 @@ const SafeCookiePolicy = () => (
             <p>_ga</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>safe.klaytn.foundation</p>
+            <p>safe.kaia.io</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Used to distinguish users</p>
@@ -368,7 +368,7 @@ const CookiePolicy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Klaytn Safe{Wallet} – Cookie policy'}</title>
+        <title>{'Kaia Safe{Wallet} – Cookie policy'}</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeCookiePolicy />}</main>
