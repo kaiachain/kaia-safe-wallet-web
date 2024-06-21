@@ -46,6 +46,7 @@ for (let _walletName in ProviderLabel) {
   walletFilter[_walletName] = false
 }
 walletFilter['MetaMask'] = true
+walletFilter['Rabby'] = true
 
 const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit } = {
   [WALLET_KEYS.KAIKAS]: () => kaikasModule() as WalletInit,
@@ -53,7 +54,7 @@ const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit }
     injectedWalletModule({
       /* @ts-ignore */
       filter: walletFilter,
-      displayUnavailable: [ProviderLabel.MetaMask],
+      displayUnavailable: [ProviderLabel.MetaMask, ProviderLabel.Rabby],
     }) as WalletInit,
   [WALLET_KEYS.WALLETCONNECT_V2]: (chain) => walletConnectV2(chain) as WalletInit,
   [WALLET_KEYS.DCENT]: () => dcentModule() as WalletInit,

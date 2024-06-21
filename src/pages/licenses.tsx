@@ -13,7 +13,7 @@ const SafeLicenses = () => (
     <Typography variant="h3" mb={2}>
       Libraries we use
     </Typography>
-    <Box mb={4}>
+    {/* <Box mb={4}>
       <Typography mb={3}>
         This page contains a list of attribution notices for third party software that may be contained in portions of
         the {'KaiaSafe{Wallet}'}. We thank the open source community for all of their contributions.
@@ -340,7 +340,7 @@ const SafeLicenses = () => (
           </TableBody>
         </Table>
       </TableContainer>
-    </Box>
+    </Box> */}
     <Box>
       <Typography variant="h2" mb={2}>
         Web
