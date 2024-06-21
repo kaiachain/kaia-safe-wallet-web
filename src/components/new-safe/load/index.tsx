@@ -10,6 +10,7 @@ import SetAddressStep from '@/components/new-safe/load/steps/SetAddressStep'
 import { AppRoutes } from '@/config/routes'
 import SafeOwnerStep from '@/components/new-safe/load/steps/SafeOwnerStep'
 import SafeReviewStep from '@/components/new-safe/load/steps/SafeReviewStep'
+import Banner from '@/components/common/Banner'
 
 export type LoadSafeFormData = NamedAddress & {
   threshold: number
@@ -54,6 +55,9 @@ const LoadSafe = ({ initialData }: { initialData?: TxStepperProps<LoadSafeFormDa
   return (
     <Container data-testid="load-safe-form">
       <Grid container columnSpacing={3} mt={[2, null, 7]} justifyContent="center">
+        <Grid item xs={12} md={10} lg={8} mb={5}>
+          <Banner />
+        </Grid>
         <Grid item xs={12} md={10} lg={8}>
           <Typography variant="h2" pb={2}>
             Add Safe Account to watchlist

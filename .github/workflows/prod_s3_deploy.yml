@@ -38,6 +38,7 @@ jobs:
           NEXT_PUBLIC_IS_PRODUCTION: ${{ secrets.NEXT_PUBLIC_IS_PRODUCTION }}
           NEXT_PUBLIC_IS_OFFICIAL_HOST: ${{ secrets.NEXT_PUBLIC_IS_OFFICIAL_HOST }}
           NEXT_PUBLIC_WC_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_WC_PROJECT_ID_PROD }}
+          NEXT_PUBLIC_BANNER_API: ${{ secrets.NEXT_PUBLIC_BANNER_API }}
         run: yarn build
 
       - name: Sync to S3 bucket and validation cloudfront

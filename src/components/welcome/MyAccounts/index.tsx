@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Box, Button, Link, SvgIcon, Typography } from '@mui/material'
+import { Box, Button, Link, SvgIcon, Typography, Grid } from '@mui/material'
 import madProps from '@/utils/mad-props'
 import CreateButton from './CreateButton'
 import useAllSafes, { type SafeItems } from './useAllSafes'
@@ -15,6 +15,7 @@ import ConnectWalletButton from '@/components/common/ConnectWallet/ConnectWallet
 import useWallet from '@/hooks/wallets/useWallet'
 import { useRouter } from 'next/router'
 import useTrackSafesCount from './useTrackedSafesCount'
+import Banner from '@/components/common/Banner'
 
 const NO_SAFES_MESSAGE = "You don't have any Safe Accounts yet"
 
@@ -36,6 +37,7 @@ const AccountsList = ({ safes, onLinkClick }: AccountsListProps) => {
   return (
     <Box data-testid="sidebar-safe-container" className={css.container}>
       <Box className={css.myAccounts}>
+        <Banner />
         <Box className={css.header}>
           <Typography variant="h1" fontWeight={700} className={css.title}>
             Safe accounts

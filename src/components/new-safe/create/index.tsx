@@ -21,6 +21,7 @@ import ExternalLink from '@/components/common/ExternalLink'
 import { HelpCenterArticle } from '@/config/constants'
 import { isSocialLoginWallet } from '@/services/mpc/SocialLoginModule'
 import { useMnemonicSafeName } from '@/hooks/useMnemonicName'
+import Banner from '@/components/common/Banner'
 
 export type NewSafeFormData = {
   name: string
@@ -177,7 +178,11 @@ const CreateSafe = () => {
 
   return (
     <Container>
-      <Grid container columnSpacing={3} justifyContent="center" mt={[2, null, 7]}>
+      <Grid container columnSpacing={3} justifyContent="center" mt={[2, null, 0]}>
+        <Grid item xs={8} mb={5}>
+          <Banner />
+        </Grid>
+
         <Grid item xs={12}>
           <Typography variant="h2" pb={2}>
             Create new Safe Account

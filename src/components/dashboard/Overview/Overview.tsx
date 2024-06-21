@@ -15,6 +15,7 @@ import { useVisibleBalances } from '@/hooks/useVisibleBalances'
 import ArrowIconNW from '@/public/images/common/arrow-top-right.svg'
 import ArrowIconSE from '@/public/images/common/arrow-se.svg'
 import BuyCryptoButton from '@/components/common/BuyCryptoButton'
+import Banner from '@/components/common/Banner'
 
 const SkeletonOverview = (
   <>
@@ -60,6 +61,13 @@ const Overview = (): ReactElement => {
           SkeletonOverview
         ) : (
           <>
+            <Grid container>
+              <Grid item xs={3}></Grid>
+              <Grid item xs={6}>
+                <Banner />
+              </Grid>
+              <Grid item xs={3}></Grid>
+            </Grid>
             <Grid container pb={2} mt={3} gap={2} alignItems="flex-end" justifyContent="space-between">
               <Grid item>
                 <Typography color="primary.light" fontWeight="bold" mb={1}>
