@@ -13,7 +13,7 @@ import { setBaseUrl as setGatewayBaseUrl } from '@safe-global/safe-gateway-types
 import { CacheProvider, type EmotionCache } from '@emotion/react'
 import SafeThemeProvider from '@/components/theme/SafeThemeProvider'
 import '@/styles/globals.css'
-import { IS_PRODUCTION, GATEWAY_URL_STAGING, GATEWAY_URL_PRODUCTION } from '@/config/constants'
+import { IS_PRODUCTION, GATEWAY_URL_STAGING, GATEWAY_URL_PRODUCTION, RECOVERY_FEEDBACK_FORM } from '@/config/constants'
 import { makeStore, useHydrateStore } from '@/store'
 import PageLayout from '@/components/common/PageLayout'
 import useLoadableStores from '@/hooks/useLoadableStores'
@@ -114,7 +114,11 @@ const WebCoreApp = ({
         <MetaTags prefetchUrl={GATEWAY_URL} />
         <script
           async
-          data-nf='{"formurl":"https://noteforms.com/forms/kaiasafewallet-feedback-form-vptw2t","emoji":"💬","position":"right","bgcolor":"#12ff80","width":"500"}'
+          data-nf={
+            '{"formurl":"' +
+            RECOVERY_FEEDBACK_FORM +
+            '","emoji":"💬","position":"right","bgcolor":"#ccf33a","width":"500"}'
+          }
           src="https://noteforms.com/widgets/embed-min.js"
         ></script>
       </Head>

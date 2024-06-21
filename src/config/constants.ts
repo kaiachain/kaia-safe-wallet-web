@@ -3,8 +3,7 @@ export const IS_DEV = process.env.NODE_ENV === 'development'
 
 export const GATEWAY_URL_PRODUCTION =
   process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-gateway.kaia.io/cgw'
-export const GATEWAY_URL_STAGING =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-gateway.kaia.io/cgw'
+export const GATEWAY_URL_STAGING = process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-gateway.kaia.io/cgw'
 
 // Magic numbers
 export const POLLING_INTERVAL = 15_000
@@ -95,8 +94,7 @@ export const HelperCenterArticleTitles = {
   RECOVERY: 'Learn more about the Account recovery process',
 }
 
-export const RECOVERY_FEEDBACK_FORM =
-  'https://noteforms.com/forms/kaiasafewallet-feedback-form-vptw2t'
+export const RECOVERY_FEEDBACK_FORM = 'https://noteforms.com/forms/kaiasafewallet-feedback-form-vptw2t'
 
 // Social
 export const DISCORD_URL = 'https://discord.com/invite/kaiachain'

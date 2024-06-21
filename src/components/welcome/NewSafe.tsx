@@ -2,8 +2,8 @@ import React from 'react'
 import { Grid, SvgIcon, Typography } from '@mui/material'
 import css from './styles.module.css'
 import CheckFilled from '@/public/images/common/check-filled.svg'
-
 import WelcomeLogin from './WelcomeLogin'
+import Banner from '@/components/common/Banner'
 
 const BulletListItem = ({ text }: { text: string }) => (
   <li>
@@ -36,6 +36,8 @@ const NewSafe = () => {
               <BulletListItem text="Make it yours with modules and guards" />
               <BulletListItem text="Access 130+ ecosystem apps" />
             </ul>
+
+            <Banner />
           </div>
         </Grid>
       </Grid>
