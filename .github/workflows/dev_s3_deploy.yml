@@ -35,9 +35,11 @@ jobs:
       - name: Build static files
         env:
           NEXT_PUBLIC_GATEWAY_URL_PRODUCTION: ${{ secrets.NEXT_PUBLIC_GATEWAY_URL_DEV }}
+          NEXT_PUBLIC_GATEWAY_URL_STAGING: ${{ secrets.NEXT_PUBLIC_GATEWAY_URL_DEV }}
           NEXT_PUBLIC_IS_PRODUCTION: ${{ secrets.NEXT_PUBLIC_IS_PRODUCTION }}
           NEXT_PUBLIC_IS_OFFICIAL_HOST: ${{ secrets.NEXT_PUBLIC_IS_OFFICIAL_HOST }}
           NEXT_PUBLIC_WC_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_WC_PROJECT_ID_DEV }}
+          NEXT_PUBLIC_SAFE_VERSION: 1.32.2
           NODE_OPTIONS: "--max_old_space_size=8192"
         run: yarn build
 
