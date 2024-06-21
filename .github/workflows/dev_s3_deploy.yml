@@ -19,7 +19,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN_DEV }}
-          role-session-name: SessionForKlaytnActions
+          role-session-name: SessionForKaiaAction
           aws-region: ${{ secrets.AWS_REGION_DEV }}
 
       - name: Installing Node.js
