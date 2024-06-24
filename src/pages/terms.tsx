@@ -30,7 +30,7 @@ const SafeTerms = () => (
     The following are the benefits of Kaia Safe.
     <ol start={1}>
       <li>
-        <b>Store and Transfer KLAY, KCTs (KIP7, KIP13):</b> Users can deposit your virtual assets such as KLAY and Kaia
+        <b>Store and Transfer KAIA, KCTs (KIP7, KIP13):</b> Users can deposit your virtual assets such as KAIA and Kaia
         Compatible Tokens (KCTs, fungible or non-fungible) to a KaiaSafe address and also transfer to a destination
         address.
       </li>
@@ -331,7 +331,7 @@ const SafeTerms = () => (
     <ol start={1}>
       <li>
         To the fullest extent permitted by applicable laws, in no event shall we be liable for any losses, including any
-        loss of your asset (including without limitation, KLAY, KCTs or any other virtual assets either tangible or
+        loss of your asset (including without limitation, KAIA, KCTs or any other virtual assets either tangible or
         intangible) or any indirect or consequential losses, or for any loss of profit, revenue, contracts, data,
         goodwill or other similar losses.
       </li>

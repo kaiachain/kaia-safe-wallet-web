@@ -30,33 +30,31 @@ const SafeAPIs = () => (
             <TableRow>
               <TableCell>Safe Gateway service</TableCell>
               <TableCell>
-                <ExternalLink href="https://safe-gateway.klaytn.foundation/cgw/api">
-                  https://safe-gateway.klaytn.foundation/cgw/api
+                <ExternalLink href="https://safe-gateway.kaia.io/cgw/api">
+                  https://safe-gateway.kaia.io/cgw/api
                 </ExternalLink>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Safe Cypress Transaction service</TableCell>
               <TableCell>
-                <ExternalLink href="https://docs-safe.klaytn.foundation/txs-cypress/">
-                  https://docs-safe.klaytn.foundation/txs-cypress/
+                <ExternalLink href="https://docs-safe.kaia.io/txs-cypress/">
+                  https://docs-safe.kaia.io/txs-cypress/
                 </ExternalLink>
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Safe Baobab Transaction service</TableCell>
+              <TableCell>Safe Kairos Transaction service</TableCell>
               <TableCell>
-                <ExternalLink href="https://docs-safe.klaytn.foundation/txs-baobab/">
-                  https://docs-safe.klaytn.foundation/txs-baobab/
+                <ExternalLink href="https://docs-safe.kaia.io/txs-baobab/">
+                  https://docs-safe.kaia.io/txs-baobab/
                 </ExternalLink>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Safe Config service</TableCell>
               <TableCell>
-                <ExternalLink href="https://docs-safe.klaytn.foundation/cfg/">
-                  https://docs-safe.klaytn.foundation/cfg/
-                </ExternalLink>
+                <ExternalLink href="https://docs-safe.kaia.io/cfg/">https://docs-safe.kaia.io/cfg/</ExternalLink>
               </TableCell>
             </TableRow>
           </TableBody>
