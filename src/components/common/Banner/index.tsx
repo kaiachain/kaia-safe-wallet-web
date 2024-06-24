@@ -24,7 +24,7 @@ const responsive = {
 const BANNER_API = process.env.NEXT_PUBLIC_BANNER_API
 const BANNER_BASE_PATH = BANNER_API + '/klaytnsafe/web'
 export default function Banner(): ReactElement {
-  const [banners, setBanners] = useState([])
+  const [banners, setBanners] = useState<any>([])
   useEffect(() => {
     if (BANNER_API) {
       const fetchData = async () => {
@@ -39,8 +39,8 @@ export default function Banner(): ReactElement {
   return (
     <>
       {banners.length > 0 && (
-        <Carousel responsive={responsive}>
-          {banners.map((_banner, index) => (
+        <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={4000} infinite={true}>
+          {banners.map((_banner: any, index: any) => (
             <a key={index} href={_banner['url']} target="_blank">
               <img width="100%" alt="Banner" src={BANNER_BASE_PATH + _banner['path']} />
             </a>
