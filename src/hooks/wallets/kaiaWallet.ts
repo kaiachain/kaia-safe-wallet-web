@@ -1,7 +1,7 @@
 import type { WalletInit } from '@web3-onboard/common'
 import { createEIP1193Provider } from '@web3-onboard/common'
 import Caver from 'caver-js'
-import { KAIKAS_SVG } from './consts'
+import { KAIAWALLET_SVG } from './consts'
 
 export const createDownloadMessage = (walletLabel: string, download?: string | (() => void)): string => {
   if (!download) return `Please switch to ${walletLabel} to continue`
@@ -12,19 +12,19 @@ export const createDownloadMessage = (walletLabel: string, download?: string | (
   }
 }
 
-function kaikasWallet(): WalletInit {
+function kaiaWallet(): WalletInit {
   return () => {
     return {
-      label: 'Kaikas',
+      label: 'KaiaWallet',
       injectedNamespace: 'klaytn',
-      getIcon: async () => KAIKAS_SVG,
+      getIcon: async () => KAIAWALLET_SVG,
       getInterface: async (interfaceData: any) => {
         const provider: any = window.klaytn
         if (!provider) {
           throw new Error(
             createDownloadMessage(
-              'Kaikas',
-              'https://chromewebstore.google.com/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi',
+              'KaiaWallet',
+              'https://chromewebstore.google.com/detail/kaia-wallet/jblndlipeogpafnldhgmapagcccfchpi',
             ),
           )
         }
@@ -70,4 +70,4 @@ function kaikasWallet(): WalletInit {
     }
   }
 }
-export default kaikasWallet
+export default kaiaWallet

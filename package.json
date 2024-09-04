@@ -2,7 +2,7 @@
   "name": "kaia-safe-wallet-web",
   "homepage": "https://github.com/kaiachain/kaia-safe-wallet-web",
   "license": "GPL-3.0",
-  "version": "1.32.2",
+  "version": "1.32.3",
   "type": "module",
   "scripts": {
     "dev": "next dev",

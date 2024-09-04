@@ -1,7 +1,7 @@
 export const AppRoutes = {
   '404': '/404',
   wc: '/wc',
-  apiReference: 'api-reference',
+  apiReference: '/api-reference',
   terms: '/terms',
   privacy: '/privacy',
   licenses: '/licenses',

@@ -13,7 +13,7 @@ BEFORE SUBMITTING: Please search to make sure this issue hasn't been reported al
 ## Environment
 
 - Browser: Chrome
-- Wallet: Kaikas
+- Wallet: KaiaWallet
 - Chain: Kaia Mainnet
 
 ## Steps to reproduce

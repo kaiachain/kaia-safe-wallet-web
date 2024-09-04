@@ -63,7 +63,7 @@ const SafeTerms = () => (
             KaiaSafe
           </MUILink>
         </Link>{' '}
-        website and connecting your blockchain wallet such as Kaikas. For the avoidance of doubts, all content and
+        website and connecting your blockchain wallet such as KaiaWallet. For the avoidance of doubts, all content and
         functionality on the Services is the exclusive property of Kaia or its licensors and is protected by applicable
         laws. Kaia hereby grants you a limited, non-exclusive, non-transferable, revocable license pursuant to Section 8
         herein to use the Services solely for your own benefit, provided that you comply with this Agreement. Nothing on
@@ -80,7 +80,7 @@ const SafeTerms = () => (
           </MUILink>
         </Link>{' '}
         of Kaia website and the{' '}
-        <Link href="https://kaia.io/privacy/">
+        <Link href="https://kaia.io/privacy-policy">
           <MUILink target="_blank" rel="noreferrer">
             privacy policy
           </MUILink>
@@ -381,9 +381,9 @@ const SafeTerms = () => (
       <li>
         Notwithstanding the foregoing, we care about data privacy and security. Please review Kaia&apos;s privacy policy
         on{' '}
-        <Link href="https://kaia.io/privacy/">
+        <Link href="https://kaia.io/privacy-policy">
           <MUILink target="_blank" rel="noreferrer">
-            https://kaia.io/privacy/
+            https://kaia.io/privacy-policy
           </MUILink>
         </Link>
         . By using KaiaSafe, you are agreeing to be bound by Kaia privacy policy, which is incorporated into the Terms

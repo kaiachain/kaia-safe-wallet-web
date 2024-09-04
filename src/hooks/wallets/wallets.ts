@@ -12,7 +12,7 @@ import e2eWalletModule from '@/tests/e2e-wallet'
 import { CGW_NAMES, WALLET_KEYS } from './consts'
 import MpcModule from '@/services/mpc/SocialLoginModule'
 import { SOCIAL_WALLET_OPTIONS } from '@/services/mpc/config'
-import kaikasModule from './kaikasWallet'
+import kaiaModule from './kaiaWallet'
 
 const prefersDarkMode = (): boolean => {
   return window?.matchMedia('(prefers-color-scheme: dark)')?.matches
@@ -49,7 +49,7 @@ walletFilter['MetaMask'] = true
 walletFilter['Rabby'] = true
 
 const WALLET_MODULES: { [key in WALLET_KEYS]: (chain: ChainInfo) => WalletInit } = {
-  [WALLET_KEYS.KAIKAS]: () => kaikasModule() as WalletInit,
+  [WALLET_KEYS.KAIAWALLET]: () => kaiaModule() as WalletInit,
   [WALLET_KEYS.INJECTED]: () =>
     injectedWalletModule({
       /* @ts-ignore */
