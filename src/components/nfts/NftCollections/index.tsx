@@ -51,6 +51,7 @@ const NftCollections = (): ReactElement => {
   // Add new NFTs to the accumulated list
   useEffect(() => {
     if (nftPage) {
+      debugger
       setAllNfts((prev) => prev.concat(nftPage.results))
     }
   }, [nftPage])
@@ -80,7 +81,17 @@ const NftCollections = (): ReactElement => {
             isLoading={loading || !nftPage || !!nftPage?.next}
           >
             {/* Infinite scroll at the bottom of the table */}
-            {nftPage?.next ? <InfiniteScroll onLoadMore={() => setPageUrl(nftPage.next)} /> : null}
+            {nftPage?.next ? (
+              <InfiniteScroll
+                onLoadMore={() =>
+                  setPageUrl(
+                    nftPage.next
+                      ? nftPage.next.replace('http:', 'https:').replace('.io/v2/', '.io/cgw/v2/')
+                      : undefined,
+                  )
+                }
+              />
+            ) : null}
           </NftGrid>
         </form>
       )}
