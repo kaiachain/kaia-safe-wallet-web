@@ -2,7 +2,7 @@
   "name": "kaia-safe-wallet-web",
   "homepage": "https://github.com/kaiachain/kaia-safe-wallet-web",
   "license": "GPL-3.0",
-  "version": "1.32.3",
+  "version": "1.32.4",
   "type": "module",
   "scripts": {
     "dev": "next dev",
@@ -36,16 +36,12 @@
   },
   "browser": {
     "fs": false,
-    "path": false,
-    "os": false
+    "os": false,
+    "path": false
   },
   "resolutions": {
     "@walletconnect/core": "^2.11.2",
-    "@walletconnect/ethereum-provider": "^2.11.2",
-    "@safe-global/safe-core-sdk-types/**/ethers": "^6.11.1",
-    "@safe-global/protocol-kit/**/ethers": "^6.11.1",
-    "@safe-global/api-kit/**/ethers": "^6.11.1",
-    "@gnosis.pm/zodiac/**/ethers": "^6.11.1"
+    "@walletconnect/ethereum-provider": "^2.11.2"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^9.7.1",
