@@ -61,4 +61,4 @@ jobs:
         with:
             load_balancer_name: eco-kaia-safe-frontend
             path: '/*'
-            host: 'kaia-safe-gcp.ecosystem-dev.in.kaia.io'
+            host: 'kaia-safe.ecosystem-dev.in.kaia.io'
