@@ -1,0 +1,64 @@
+name: kaia-safe-react prod-gcp deploy workflow
+on:
+  push:
+    branches:
+      - dev
+
+env:
+  PROJECT_ID: "kaia-cluster-prod"
+  SERVICE_ACCOUNT: "kaia-safe-wallet-web-prod@kaia-cluster-prod.iam.gserviceaccount.com"
+  WORKLOAD_IDENTITY_PROVIDER: "projects/380808041996/locations/global/workloadIdentityPools/kaia-cluster-prod/providers/kaia-safe-wallet-web-gha-prvdr"
+
+jobs:
+  deploy:
+    permissions:
+      id-token: write
+      contents: read
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v2'
+        with:
+          token_format: 'access_token'
+          project_id: ${{ env.PROJECT_ID }}
+          service_account: ${{ env.SERVICE_ACCOUNT }}
+          workload_identity_provider: ${{ env.WORKLOAD_IDENTITY_PROVIDER }}
+
+      - name: Installing Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          yarn install --frozen-lockfile && yarn after-install
+          cp ./override/utils.js ./node_modules/@safe-global/safe-gateway-typescript-sdk/dist
+
+      - name: Build static files
+        env:
+          NEXT_PUBLIC_GATEWAY_URL_PRODUCTION: ${{ secrets.NEXT_PUBLIC_GATEWAY_URL_PROD_GCP }}
+          NEXT_PUBLIC_IS_PRODUCTION: ${{ secrets.NEXT_PUBLIC_IS_PRODUCTION }}
+          NEXT_PUBLIC_IS_OFFICIAL_HOST: ${{ secrets.NEXT_PUBLIC_IS_OFFICIAL_HOST }}
+          NEXT_PUBLIC_WC_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_WC_PROJECT_ID_PROD }}
+          NEXT_PUBLIC_BANNER_API: ${{ secrets.NEXT_PUBLIC_BANNER_API }}
+          NODE_OPTIONS: "--max_old_space_size=8192"
+        run: yarn build
+
+      - name: Deploy to GCS
+        uses: 'google-github-actions/upload-cloud-storage@v2'
+        with:
+          path: 'out'
+          destination: 'kaia-safe-prod-frontend'
+          parent: false
+
+      - name: Invalid CDN cache on GCP
+        uses: stefanodotit/github-actions-invalidate-gcp-cdn@v1
+        with:
+            load_balancer_name: eco-kaia-safe-frontend
+            path: '/*'
+            host: 'safe-gcp.kaia.io'
