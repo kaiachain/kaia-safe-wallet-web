@@ -59,6 +59,6 @@ jobs:
       - name: Invalid CDN cache on GCP
         uses: stefanodotit/github-actions-invalidate-gcp-cdn@v1
         with:
-            load_balancer_name: eco-kaia-safe-frontend
+            load_balancer_name: kaia-safe-prod
             path: '/*'
             host: 'safe-gcp.kaia.io'
