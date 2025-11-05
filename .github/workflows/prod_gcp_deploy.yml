@@ -41,7 +41,7 @@ jobs:
 
       - name: Build static files
         env:
-          NEXT_PUBLIC_GATEWAY_URL_PRODUCTION: ${{ secrets.NEXT_PUBLIC_GATEWAY_URL_PROD_GCP }}
+          NEXT_PUBLIC_GATEWAY_URL_PRODUCTION: ${{ secrets.NEXT_PUBLIC_GATEWAY_URL_PROD }}
           NEXT_PUBLIC_IS_PRODUCTION: ${{ secrets.NEXT_PUBLIC_IS_PRODUCTION }}
           NEXT_PUBLIC_IS_OFFICIAL_HOST: ${{ secrets.NEXT_PUBLIC_IS_OFFICIAL_HOST }}
           NEXT_PUBLIC_WC_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_WC_PROJECT_ID_PROD }}
@@ -61,4 +61,4 @@ jobs:
         with:
             load_balancer_name: kaia-safe-prod
             path: '/*'
-            host: 'safe-gcp.kaia.io'
+            host: 'safe.kaia.io'
