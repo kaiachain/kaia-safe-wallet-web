@@ -1,6 +1,7 @@
 import type { WalletInit } from '@web3-onboard/common'
 import { createEIP1193Provider } from '@web3-onboard/common'
 import Caver from 'caver-js'
+
 import { KAIAWALLET_SVG } from './consts'
 
 export const createDownloadMessage = (walletLabel: string, download?: string | (() => void)): string => {
@@ -39,19 +40,8 @@ function kaiaWallet(): WalletInit {
         return Promise.resolve({
           provider: createEIP1193Provider(provider, {
             eth_sendTransaction: async ({ baseRequest, params }: any) => {
-              let txninput: any = {
-                from: params[0].from,
-                to: params[0].to,
-                gas: params[0].gas,
-              }
-              if (params[0].data) {
-                txninput['data'] = params[0].data
-              }
-              if (params[0].value) {
-                txninput['value'] = params[0].value
-              }
-              let txndata = await walletCaver.klay.sendTransaction(txninput)
-              return txndata.transactionHash as string
+              const txHash = await baseRequest({ method: 'eth_sendTransaction', params })
+              return (txHash as string) || ''
             },
             eth_getBalance: async ({ params }: any) => {
               let networkVersion = walletCaver.utils.toHex(provider.networkVersion)
