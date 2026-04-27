@@ -36,18 +36,18 @@ const SafeAPIs = () => (
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Safe Cypress Transaction service</TableCell>
+              <TableCell>Safe Mainnet Transaction service</TableCell>
               <TableCell>
-                <ExternalLink href="https://docs-safe.kaia.io/txs-cypress/">
-                  https://docs-safe.kaia.io/txs-cypress/
+                <ExternalLink href="https://docs-safe.kaia.io/txs-mainnet/">
+                  https://docs-safe.kaia.io/txs-mainnet/
                 </ExternalLink>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Safe Kairos Transaction service</TableCell>
               <TableCell>
-                <ExternalLink href="https://docs-safe.kaia.io/txs-baobab/">
-                  https://docs-safe.kaia.io/txs-baobab/
+                <ExternalLink href="https://docs-safe.kaia.io/txs-kairos/">
+                  https://docs-safe.kaia.io/txs-kairos/
                 </ExternalLink>
               </TableCell>
             </TableRow>
