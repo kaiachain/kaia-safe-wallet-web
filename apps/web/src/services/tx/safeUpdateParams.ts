@@ -109,14 +109,15 @@ export const extractTargetVersionFromUpdateSafeTx = (
     return determineMasterCopyVersion(decodedData[0], safe.chainId)
   }
 
-  const safeMigrationAddress = getSafeMigrationDeployment({
-    version: SAFE_TO_L2_MIGRATION_VERSION,
-    network: safe.chainId,
-  })?.networkAddresses[safe.chainId]
-
-  // Otherwise it must be a delegate call to the SafeMigration 1.4.1 contract
-  if (migrationTxData.operation === 1 && sameAddress(safeMigrationAddress, migrationTxData.to)) {
-    // This contract can only migrate to 1.4.1
-    return SAFE_TO_L2_MIGRATION_VERSION
+  // Check known SafeMigration contract versions. createUpdateMigration() always uses defaultAddress,
+  // so we match against defaultAddress here too (avoids network-filter returning undefined for chains
+  // like Kairos/1001 that are only registered in v1.5.0 assets).
+  const KNOWN_MIGRATION_VERSIONS = [SAFE_TO_L2_MIGRATION_VERSION, '1.5.0'] as const
+  for (const version of KNOWN_MIGRATION_VERSIONS) {
+    const deployment = getSafeMigrationDeployment({ version })
+    const migrationAddress = deployment?.defaultAddress
+    if (migrationTxData.operation === 1 && sameAddress(migrationAddress, migrationTxData.to)) {
+      return version as SafeVersion
+    }
   }
 }

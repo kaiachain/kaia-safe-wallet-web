@@ -5,13 +5,16 @@ import {
   getFallbackHandlerDeployment,
   getSafeL2SingletonDeployment,
   getSafeSingletonDeployment,
+  getSafeMigrationDeployment,
 } from '@safe-global/safe-deployments'
 import { type SafeState } from '@safe-global/store/gateway/AUTO_GENERATED/safes'
+import type { TransactionData } from '@safe-global/store/gateway/AUTO_GENERATED/transactions'
 import { Interface, JsonRpcProvider } from 'ethers'
-import { createUpdateSafeTxs } from '../safeUpdateParams'
+import { createUpdateSafeTxs, extractTargetVersionFromUpdateSafeTx } from '../safeUpdateParams'
 import * as web3 from '@/hooks/wallets/web3'
 import { chainBuilder } from '@/tests/builders/chains'
 import { getLatestSafeVersion } from '@safe-global/utils/utils/chains'
+import { OperationType } from '@safe-global/types-kit'
 
 const MOCK_SAFE_ADDRESS = '0x0000000000000000000000000000000000005AFE'
 
@@ -138,6 +141,50 @@ describe('safeUpgradeParams', () => {
         getFallbackHandlerDeployment({ version: '1.4.1', network: '100' })?.defaultAddress,
       ),
     ).toBeTruthy()
+  })
+})
+
+describe('extractTargetVersionFromUpdateSafeTx', () => {
+  const mockSafeBase = {
+    address: { value: MOCK_SAFE_ADDRESS },
+    chainId: '1001', // Kairos
+    fallbackHandler: null,
+  } as unknown as SafeState
+
+  const makeDelegateTxData = (toAddress: string): TransactionData => ({
+    to: { value: toAddress, name: null, logoUri: null },
+    operation: OperationType.DelegateCall,
+    hexData: '0x',
+    value: '0',
+  })
+
+  it('detects v1.4.1 SafeMigration delegate call on Kairos', () => {
+    const v141Address = getSafeMigrationDeployment({ version: '1.4.1' })?.defaultAddress
+    const txData = makeDelegateTxData(v141Address!)
+    const safe = { ...mockSafeBase, version: '1.3.0' } as unknown as SafeState
+
+    const result = extractTargetVersionFromUpdateSafeTx(txData, safe)
+    expect(result).toBe('1.4.1')
+  })
+
+  it('detects v1.5.0 SafeMigration delegate call on Kairos (regression for "Unknown contract")', () => {
+    // createUpdateMigration() uses defaultAddress for the SafeMigration contract.
+    // For chains with recommendedMasterCopyVersion='1.5.0' (like Kairos/1001), the
+    // v1.5.0 SafeMigration is used but was previously undetected → "Unknown contract" in UI.
+    const v150Address = getSafeMigrationDeployment({ version: '1.5.0' })?.defaultAddress
+    const txData = makeDelegateTxData(v150Address!)
+    const safe = { ...mockSafeBase, version: '1.3.0' } as unknown as SafeState
+
+    const result = extractTargetVersionFromUpdateSafeTx(txData, safe)
+    expect(result).toBe('1.5.0')
+  })
+
+  it('returns undefined for an unrecognised delegate call target', () => {
+    const txData = makeDelegateTxData('0x1234567890123456789012345678901234567890')
+    const safe = { ...mockSafeBase, version: '1.3.0' } as unknown as SafeState
+
+    const result = extractTargetVersionFromUpdateSafeTx(txData, safe)
+    expect(result).toBeUndefined()
   })
 })
 
