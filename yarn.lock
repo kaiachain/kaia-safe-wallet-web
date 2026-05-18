@@ -13308,12 +13308,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@safe-global/safe-deployments@npm:^1.37.52, @safe-global/safe-deployments@npm:^1.37.54":
-  version: 1.37.54
-  resolution: "@safe-global/safe-deployments@npm:1.37.54"
+"@safe-global/safe-deployments@npm:1.37.56":
+  version: 1.37.56
+  resolution: "@safe-global/safe-deployments@npm:1.37.56"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/1a5e76d076fb8850d1320526489b60d3cebab7abfbc00ab10d916bf146f5741195f060af3636fec6ef6b0ed85682c70db5e9c2fbbaaf97b43977cb5ee8b6c731
+  checksum: 10/fd9a226aed59fe017bfade1b0f62e78df246c58a1ad8f88739023c785a1b3226fe5a14c09226f8b5541fb348e84c3cf1cd5b41571a0c3e6685ceeaafb00d4a9a
+  languageName: node
+  linkType: hard
+
+"@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm:1.37.56#.yarn/patches/@safe-global-safe-deployments-npm-1.37.56-4eea5ff9ef.patch::locator=%40safe-global%2Fsafe-wallet%40workspace%3A.":
+  version: 1.37.56
+  resolution: "@safe-global/safe-deployments@patch:@safe-global/safe-deployments@npm%3A1.37.56#.yarn/patches/@safe-global-safe-deployments-npm-1.37.56-4eea5ff9ef.patch::version=1.37.56&hash=849bb8&locator=%40safe-global%2Fsafe-wallet%40workspace%3A."
+  dependencies:
+    semver: "npm:^7.6.2"
+  checksum: 10/28b1be684eb1d9fcfa0dfff904dd0381b74da647ce67742d330658d3764236d0e9ea2b40c180a9258b554d2399a66ebdfd0ac289f0ee1eae7bd3f0bfc7c1bd27
   languageName: node
   linkType: hard
 

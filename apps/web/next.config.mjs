@@ -107,7 +107,7 @@ const nextConfig = {
         },
       }
     : {}),
-  webpack(config, { dev }) {
+  webpack(config, { dev, isServer }) {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: { and: [/\.(js|ts|md)x?$/] },
@@ -136,23 +136,31 @@ const nextConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       'bn.js': path.resolve('../../node_modules/bn.js/lib/bn.js'),
-      'mainnet.json': path.resolve('../..node_modules/@ethereumjs/common/dist.browser/genesisStates/mainnet.json'),
+      'mainnet.json': path.resolve('../../node_modules/@ethereumjs/common/dist.browser/genesisStates/mainnet.json'),
       '@mui/material$': path.resolve('./src/components/common/Mui'),
     }
 
     if (dev) {
-      config.optimization.splitChunks = {
-        ...config.optimization.splitChunks,
-        cacheGroups: {
-          ...config.optimization.splitChunks.cacheGroups,
-          customModule: {
-            test: /[\\/]..[\\/]..[\\/]node_modules[\\/](@safe-global|ethers)[\\/]/,
-            name: 'protocol-kit-ethers',
-            chunks: 'all',
-          },
-        },
-      }
       config.optimization.minimize = false
+
+      // Only split @safe-global / ethers into a shared chunk for the client
+      // bundle. Applying chunks:'all' to the server (pages-dir-node) build
+      // extracts those modules into a separate chunk that the SSR runtime
+      // cannot load synchronously, causing __webpack_modules__[id] to be
+      // undefined and crashing every SSR page that imports from those packages.
+      if (!isServer) {
+        config.optimization.splitChunks = {
+          ...config.optimization.splitChunks,
+          cacheGroups: {
+            ...config.optimization.splitChunks.cacheGroups,
+            customModule: {
+              test: /[\\/]..[\\/]..[\\/]node_modules[\\/](@safe-global|ethers)[\\/]/,
+              name: 'protocol-kit-ethers',
+              chunks: 'all',
+            },
+          },
+        }
+      }
     }
 
     // Add SRI manifest plugin (production only, skip for Cypress tests)
