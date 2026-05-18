@@ -9,14 +9,17 @@ import { BRAND_NAME, CONFIG_SERVICE_KEY } from '@/config/constants'
 import { Spinner } from '@/components/ui/spinner'
 
 const Accounts: NextPage = () => {
-  const { MyAccounts, MyAccountsV2 } = useLoadFeature(MyAccountsFeature)
+  const { MyAccounts, MyAccountsV2, $isReady, $isDisabled } = useLoadFeature(MyAccountsFeature)
   const { isLoading } = useGetChainsConfigV2Query(CONFIG_SERVICE_KEY)
   const isRedesignEnabled = useHasFeature(FEATURES.WELCOME_ACCOUNTS_REDESIGN)
 
+  // Chain config must be loaded, the redesign flag resolved, and the feature
+  // module must have finished its async import (or be explicitly disabled).
   const isFlagResolved = !isLoading && isRedesignEnabled !== undefined
+  const isFeatureReady = $isReady || $isDisabled
 
   const renderAccounts = () => {
-    if (!isFlagResolved) {
+    if (!isFlagResolved || !isFeatureReady) {
       return (
         <div className="flex w-full justify-center py-16">
           <Spinner className="text-muted-foreground size-6" />
