@@ -10,6 +10,7 @@ import { useIsSidebarRoute } from '@/hooks/useIsSidebarRoute'
 import { TxModalContext } from '@/components/tx-flow'
 import BatchSidebar from '@/components/batch/BatchSidebar'
 import SocialLoginDeprecation from '@/components/common/SocialLoginDeprecation'
+import SunsetAlert from '@/components/common/SunsetAlert'
 
 const PageLayout = ({ pathname, children }: { pathname: string; children: ReactElement }): ReactElement => {
   const [isSidebarRoute, isAnimated] = useIsSidebarRoute(pathname)
@@ -36,6 +37,7 @@ const PageLayout = ({ pathname, children }: { pathname: string; children: ReactE
         })}
       >
         <div className={css.content}>
+          <SunsetAlert pathname={pathname} />
           <SocialLoginDeprecation />
 
           <SafeLoadingError>{children}</SafeLoadingError>
