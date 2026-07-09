@@ -17,7 +17,7 @@ const SunsetAlert = ({ pathname }: SunsetAlertProps) => {
       <Link href={SAFE_GLOBAL_APP_URL} target="_blank" rel="noopener noreferrer" fontWeight={700}>
         Safe{'{Wallet}'}
       </Link>{' '}
-      at app.safe.global to manage your accounts going forward. Your existing Safe Accounts will be automatically
+      for Kaia Network at app.safe.global to manage your accounts going forward. Your existing Safe Accounts will be automatically
       compatible with Safe{'{Wallet}'}.
     </Alert>
   )
