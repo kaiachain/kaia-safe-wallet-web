@@ -110,4 +110,5 @@ export const REDEFINE_ARTICLE = 'https://safe.mirror.xyz/rInLWZwD_sf7enjoFerj6FI
 
 // Sunset migration
 export const SAFE_GLOBAL_APP_URL = 'https://app.safe.global/'
-export const SUNSET_DATE = 'August 9, 2026'
+export const SUNSET_DATE = 'August 31, 2026'
+export const SAFE_MIGRATION_GUIDE_URL = 'https://docs.kaia.io/build/wallets/safe-wallet/migrate-to-safe-global/'

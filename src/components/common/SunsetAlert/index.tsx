@@ -1,5 +1,5 @@
 import { Alert, Link } from '@mui/material'
-import { SAFE_GLOBAL_APP_URL, SUNSET_DATE } from '@/config/constants'
+import { SAFE_GLOBAL_APP_URL, SAFE_MIGRATION_GUIDE_URL, SUNSET_DATE } from '@/config/constants'
 import { AppRoutes } from '@/config/routes'
 
 const WELCOME_ROUTES = [AppRoutes.welcome.index, AppRoutes.welcome.accounts, AppRoutes.welcome.socialLogin]
@@ -18,7 +18,11 @@ const SunsetAlert = ({ pathname }: SunsetAlertProps) => {
         Safe{'{Wallet}'}
       </Link>{' '}
       for Kaia Network at app.safe.global to manage your accounts going forward. Your existing Safe Accounts will be automatically
-      compatible with Safe{'{Wallet}'}.
+      compatible with Safe{'{Wallet}'}. See the{' '}
+      <Link href={SAFE_MIGRATION_GUIDE_URL} target="_blank" rel="noopener noreferrer" fontWeight={700}>
+        migration guide
+      </Link>{' '}
+      for more details.
     </Alert>
   )
 }
