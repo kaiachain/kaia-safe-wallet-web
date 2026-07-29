@@ -1,8 +1,11 @@
 name: kaia-safe-react prod-gcp deploy workflow
+# Prod deploys are triggered by semver tags only (same as prod_s3_deploy.yml).
+# This previously triggered on `dev` branch pushes — every dev push deployed to
+# safe.kaia.io alongside the dev environment.
 on:
   push:
-    branches:
-      - dev
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+
 
 env:
   PROJECT_ID: "kaia-cluster-prod"
