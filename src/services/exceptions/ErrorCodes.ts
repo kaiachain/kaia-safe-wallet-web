@@ -15,6 +15,7 @@ enum ErrorCodes {
   _106 = '106: Failed to get connected wallet',
 
   _302 = '302: Error connecting to the wallet',
+  _303 = '303: Error disconnecting the wallet',
   _304 = '304: Error enabling MFA',
   _305 = '305: Error exporting account key',
   _306 = '306: Error logging in',

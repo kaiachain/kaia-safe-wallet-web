@@ -131,6 +131,21 @@ export const connectWallet = async (
   return wallets
 }
 
+/**
+ * Onboard's `disconnectWallet` removes the wallet from its state and only then reads its own
+ * `last_connected_wallet` local storage entry via `JSON.parse(entry || '')`. We initialise Onboard
+ * with `autoConnectLastWallet: false` (we track the last wallet ourselves), so that entry never
+ * exists and the parse throws after the wallet has already been disconnected. Swallow it so the
+ * rejection doesn't bubble up to the caller.
+ */
+export const disconnectWallet = async (onboard: OnboardAPI, label: string) => {
+  try {
+    await onboard.disconnectWallet({ label })
+  } catch (e) {
+    logError(Errors._303, e)
+  }
+}
+
 export const switchWallet = async (onboard: OnboardAPI) => {
   const oldWalletLabel = getConnectedWallet(onboard.state.get().wallets)?.label
   const newWallets = await connectWallet(onboard)
@@ -142,7 +157,7 @@ export const switchWallet = async (onboard: OnboardAPI) => {
   }
 
   if (newWalletLabel !== oldWalletLabel) {
-    await onboard.disconnectWallet({ label: oldWalletLabel })
+    await disconnectWallet(onboard, oldWalletLabel)
   }
 }
 

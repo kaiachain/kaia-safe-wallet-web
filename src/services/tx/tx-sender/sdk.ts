@@ -10,7 +10,7 @@ import { SAFE_FEATURES } from '@safe-global/protocol-kit/dist/src/utils/safeVers
 import { hasSafeFeature } from '@/utils/safe-versions'
 import { createWeb3 } from '@/hooks/wallets/web3'
 import { toQuantity } from 'ethers'
-import { connectWallet, getConnectedWallet } from '@/hooks/wallets/useOnboard'
+import { connectWallet, disconnectWallet, getConnectedWallet } from '@/hooks/wallets/useOnboard'
 import { type OnboardAPI } from '@web3-onboard/core'
 import type { ConnectedWallet } from '@/hooks/wallets/useOnboard'
 import { asError } from '@/services/exceptions/utils'
@@ -37,7 +37,7 @@ export const switchWalletChain = async (onboard: OnboardAPI, chainId: string): P
 
   // Hardware wallets cannot switch chains
   if (isHardwareWallet(currentWallet)) {
-    await onboard.disconnectWallet({ label: currentWallet.label })
+    await disconnectWallet(onboard, currentWallet.label)
     const wallets = await connectWallet(onboard, { autoSelect: currentWallet.label })
     return wallets ? getConnectedWallet(wallets) : null
   }

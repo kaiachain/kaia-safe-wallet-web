@@ -10,7 +10,7 @@ import EthHashInfo from '@/components/common/EthHashInfo'
 import ChainSwitcher from '@/components/common/ChainSwitcher'
 import { IS_PRODUCTION } from '@/config/constants'
 import { isSocialLoginWallet } from '@/services/mpc/SocialLoginModule'
-import useOnboard, { type ConnectedWallet, switchWallet } from '@/hooks/wallets/useOnboard'
+import useOnboard, { type ConnectedWallet, disconnectWallet, switchWallet } from '@/hooks/wallets/useOnboard'
 import { useRouter } from 'next/router'
 import useAddressBook from '@/hooks/useAddressBook'
 import { useAppSelector } from '@/store'
@@ -54,9 +54,9 @@ export const WalletInfo = ({
   const resetAccount = () => socialWalletService?.__deleteAccount()
 
   const handleDisconnect = () => {
-    onboard?.disconnectWallet({
-      label: wallet.label,
-    })
+    if (onboard) {
+      void disconnectWallet(onboard, wallet.label)
+    }
 
     handleClose()
   }
