@@ -39,10 +39,6 @@ function kaiaWallet(): WalletInit {
 
         return Promise.resolve({
           provider: createEIP1193Provider(provider, {
-            eth_sendTransaction: async ({ baseRequest, params }: any) => {
-              const txHash = await baseRequest({ method: 'eth_sendTransaction', params })
-              return (txHash as string) || ''
-            },
             eth_getBalance: async ({ params }: any) => {
               let networkVersion = walletCaver.utils.toHex(provider.networkVersion)
 
