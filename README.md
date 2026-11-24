@@ -1,3 +1,21 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+# NO LONGER MAINTAINED
+
+> [!IMPORTANT]
+> Kaia Safe (`safe.kaia.io`) was retired on **August 31, 2026**. Kaia Mainnet and Kairos Testnet are now supported natively on [Safe Wallet](https://app.safe.global). This repository was the Kaia Safe web interface and is archived.
+>
+> Your existing Safes are unaffected. Addresses, owners, thresholds, assets and on-chain history stay the same. Connect an owner wallet at [app.safe.global](https://app.safe.global) and your Safe will appear there.
+>
+> - Migration guide: [Migrate to Safe Global](https://docs.kaia.io/build/wallets/safe-wallet/migrate-to-safe-global/)
+> - Safe Wallet on Kaia: [Kaia Docs](https://docs.kaia.io/build/wallets/safe-wallet/overview/)
+>
+> Thank you to everyone who contributed to this repository.
+
+---
+
+*The content below is kept for reference only. This code is not maintained and should not be deployed.*
+
 # <img src="/public/images/logo.svg" height="60" valign="middle" alt="KaiaSafe{Wallet}" style="background: #fff; padding: 20px; margin: 0 -20px" />
 
 [![License](https://img.shields.io/github/license/kaiachain/kaia-safe-wallet-web)](https://github.com/kaiachain/kaia-safe-wallet-web/blob/dev/LICENSE)
